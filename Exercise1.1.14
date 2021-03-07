@@ -1,0 +1,17 @@
+# algorithms
+public class Charpter {
+    public static void main(String[] args) {
+        lg(5);
+    }
+    public static int lg(int N){
+            if(N < 1) System.out.println("It's error");
+            
+            int x = 0, y = 1;
+            while (y <= N){  //2^x <= N
+                y = y * 2; 
+                x++;
+            }
+            System.out.println(x);
+            return x;
+        }
+}
